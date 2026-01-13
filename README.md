@@ -29,15 +29,7 @@ Fork 此仓库到你的 GitHub 账户。
 3. Build command 留空
 4. 点击 **Save and Deploy**
 
-### 5. 绑定 D1 数据库
-
-1. 进入 **Settings** > **Bindings** > **Add**
-2. 选择 **D1 database**
-3. Variable name: `DB`
-4. Database: 选择 `qq-music-api`
-5. 点击 **Save**
-
-### 6. 设置凭证
+### 5. 设置凭证
 
 1. 进入 **Settings** > **Variables and Secrets** > **Add**
 2. Type: **Secret**
@@ -45,7 +37,7 @@ Fork 此仓库到你的 GitHub 账户。
 4. Value: 粘贴你的凭证 JSON
 5. 点击 **Save and Deploy**
 
-### 7. 初始化
+### 6. 初始化
 
 访问 `https://你的域名/admin` 初始化数据库。
 
@@ -63,7 +55,7 @@ Fork 此仓库到你的 GitHub 账户。
 | `/api/playlist?id=xxx` | 获取歌单详情 |
 | `/api/singer?mid=xxx` | 获取歌手信息 |
 | `/api/top` | 获取排行榜 |
-| `/admin` | 管理页面 |
+| `/admin` | 数据库初始化 |
 
 ---
 
