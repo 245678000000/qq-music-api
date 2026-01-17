@@ -48,7 +48,7 @@ Fork 此仓库到你的 GitHub 账户。
 | 端点 | 说明 |
 |------|------|
 | `/api/search?keyword=xxx` | 搜索歌曲/歌手/专辑/歌单 |
-| `/api/song/url?mid=xxx` | 获取歌曲播放链接 |
+| `/api/song/url?mid=xxx&quality=flac` | 获取歌曲播放链接 (quality: flac/320/128，默认 flac，自动降级) |
 | `/api/song/detail?mid=xxx` | 获取歌曲详情 |
 | `/api/song/cover?mid=xxx` | 获取歌曲封面 |
 | `/api/lyric?mid=xxx` | 获取歌词 |
