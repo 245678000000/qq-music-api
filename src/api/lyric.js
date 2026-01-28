@@ -91,7 +91,14 @@ export async function onRequest(context) {
 
         // 解密处理函数
         async function processLyric(content) {
-            if (!content) return "";
+            if (content == null) return "";
+
+            // 确保是字符串
+            if (typeof content !== 'string') {
+                console.warn("Lyric content is not string:", typeof content, content);
+                content = String(content);
+            }
+
             // 如果是以 [ 开头，可能是未加密的（虽然 crypt=1 通常都是加密的 hex）
             if (content.startsWith('[')) return content;
 
